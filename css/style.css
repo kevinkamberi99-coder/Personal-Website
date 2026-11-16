@@ -789,3 +789,19 @@ section.alt{ background:var(--paper-alt); }
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.metric-strip.portfolio-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 700px) {
+  .metric-strip.portfolio-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .metric-strip.portfolio-metrics {
+    grid-template-columns: 1fr;
+  }
+}
