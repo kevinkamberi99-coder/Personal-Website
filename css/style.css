@@ -743,3 +743,49 @@ section.alt{ background:var(--paper-alt); }
 @media (max-width:600px){
   p, .findings li{ text-align:left; hyphens:none; }
 }
+.press-coverage {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #deded9;
+  max-width: 760px;
+}
+
+.press-coverage h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.press-coverage p {
+  text-align: left;
+  hyphens: none;
+  line-height: 1.65;
+  margin: 0.5rem 0;
+}
+
+.press-note {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.press-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+}
+
+.press-list li {
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid #deded9;
+}
+
+.press-list h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.press-coverage a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
