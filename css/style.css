@@ -805,3 +805,34 @@ section.alt{ background:var(--paper-alt); }
     grid-template-columns: 1fr;
   }
 }
+/* Reset the spacing and dividers for three columns */
+.metric-strip.portfolio-metrics .metric-item {
+  border-left: 1px solid #deded9;
+  padding-left: 24px;
+}
+
+.metric-strip.portfolio-metrics .metric-item:nth-child(3n + 1) {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* Two columns on smaller screens */
+@media (max-width: 700px) {
+  .metric-strip.portfolio-metrics .metric-item {
+    border-left: 1px solid #deded9;
+    padding-left: 24px;
+  }
+
+  .metric-strip.portfolio-metrics .metric-item:nth-child(2n + 1) {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+/* One column on narrow phones */
+@media (max-width: 420px) {
+  .metric-strip.portfolio-metrics .metric-item {
+    border-left: none;
+    padding-left: 0;
+  }
+}
